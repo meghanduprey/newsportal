@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import NewSingle from './NewSingle';
 
-class News extends Component {
+
+class BBCNews extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -10,7 +11,7 @@ class News extends Component {
   }
 
   componentDidMount() {
-    const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=8222f155add24709bfa464acfe42bf51`;
+    const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8222f155add24709bfa464acfe42bf51`;
 
     fetch(url)
     .then((response) => {
@@ -25,6 +26,7 @@ class News extends Component {
   }
 
   renderItems() {
+
     return this.state.news.map((item) => (
       <NewSingle key={item.url} item={item} />
     ));
@@ -33,11 +35,11 @@ class News extends Component {
   render() {
     return (
       <div className="row">
-      <h2>Top Headlines: Top US News</h2>
+      <h2>BBC News</h2>
         {this.renderItems()}
       </div>
     )
   }
 }
 
-export default News;
+export default BBCNews;
