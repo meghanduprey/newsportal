@@ -4,6 +4,7 @@ import './App.css';
 import News from './News/News';
 import Navigation from './Navigation';
 import TechNews from './News/TechNews';
+import BBCNews from './News/BBCNews';
 
 class App extends Component  {
   constructor(props) {
@@ -28,8 +29,9 @@ class App extends Component  {
         </header>
         <Navigation/>
         <Switch>
-          <Route exact path = "News/News" component={News}/>
+          <Route exact path = "/News/News" component={News}/>
           <Route exact path="/News/TechNews" component={TechNews} />
+          <Route exact path="/News/BBCNews" component ={BBCNews}/>
         </Switch>
 
         <News/>

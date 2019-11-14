@@ -35,7 +35,7 @@ class BBCNews extends Component {
   render() {
     return (
       <div className="row">
-      <h2>BBC News</h2>
+      <h2>Top Headlines: BBC News</h2>
         {this.renderItems()}
       </div>
     )
