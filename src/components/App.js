@@ -29,12 +29,13 @@ class App extends Component  {
         </header>
         <Navigation/>
         <Switch>
+          <Route exact path = "/" component={News}/>
           <Route exact path = "/News/News" component={News}/>
           <Route exact path="/News/TechNews" component={TechNews} />
           <Route exact path="/News/BBCNews" component ={BBCNews}/>
         </Switch>
 
-        <News/>
+
 
       </div>
     </Router>
