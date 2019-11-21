@@ -5,7 +5,7 @@ const NewSingle = ({item}) => (
   <div className="col s4">
     <div className="card">
       <div className="card-image">
-        <img src={item.urlToImage} alt={item.title}/>
+        <img src={item.urlToImage !== null ? item.urlToImage : 'https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg'} alt={item.title}/>
         <span className="card-title">{item.source.name}</span>
       </div>
       <div className="card-content">

@@ -5,6 +5,7 @@ import News from './News/News';
 import Navigation from './Navigation';
 import TechNews from './News/TechNews';
 import BBCNews from './News/BBCNews';
+import logo from './images/newspaper.png';
 
 class App extends Component  {
   constructor(props) {
@@ -25,6 +26,7 @@ class App extends Component  {
     <Router>
       <div className="App">
         <header className="App-header">
+        <img src={logo} alt="newspaper icon" width="150" height="150" class="logo"/>
           <h1 className="App-title">News Feed</h1>
         </header>
         <Navigation/>

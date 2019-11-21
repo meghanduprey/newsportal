@@ -33,7 +33,7 @@ class News extends Component {
   render() {
     return (
       <div className="row">
-      <h2>Top Headlines: Top US News</h2>
+      <h2 className="headlines">Top Headlines: Top US News</h2>
         {this.renderItems()}
       </div>
     )

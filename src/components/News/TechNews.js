@@ -35,7 +35,7 @@ class TechNews extends Component {
   render() {
     return (
       <div className="row">
-      <h2>Top Headlines: Tech News</h2>
+      <h2 className="headlines">Top Headlines: Tech News</h2>
         {this.renderItems()}
       </div>
     )
