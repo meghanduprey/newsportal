@@ -31,9 +31,10 @@
 #myNav {
   color: teal;
   font-size: 16px;
+  padding: 10px;
 }
 .activeRoute {
-  background-color: rgb(236, 236, 40);
-  border-bottom: 2px solid teal;
-  cursor: not-allowed;
+  background-color: rgb(236, 128, 40);
+  color: #fff;
+  padding: 10px;
 }
